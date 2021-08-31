@@ -6,12 +6,14 @@
  */
 int main(void)
 {
-char text[9] = "Holberton";
-int i;
-for (i = 0; i < 9; i++)
-{
-_putchar(text[i]);
-}
-_putchar('\n');
-return (0);
+char *sh = "Holberton";
+
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
